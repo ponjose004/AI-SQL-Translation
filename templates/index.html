@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <title>flask</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style1.css')}}">
+    </head>
+</head>
+
+<body>
+    <video id="video-background" autoplay loop muted>
+        <source src="{{url_for('static',filename='video/video.mp4')}}" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <b>AI DRIVEN SQL INSIGHT</b>
+    </div>
+    <div class="subtitle">
+        <b>NATURAL LANGUAGE TO SQL<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QUERY</b>
+    </div>
+    <form method="post" action="/">
+        <div class="box">
+            <input type="text" name="question" value="{{ question }}"placeholder="Enter Your text here">
+        </div>
+        <div class="generate">
+            <button type="submit">Generate Sql Query</button>
+        </div>
+    </form>
+    <div class="process">
+        <input type="text" value="{{ processed_text }}" placeholder="Generated SQL Query" readonly>
+    </div>
+</body>
+
+</html>

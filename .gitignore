@@ -1,0 +1,4 @@
+t5/pytorch_model.bin
+__pycache__/
+*.pyc
+.env
