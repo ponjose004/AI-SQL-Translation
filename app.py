@@ -4,7 +4,7 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 app = Flask(__name__)
 
 # Replace with your actual HF username/model-name
-model_path = "your-hf-username/my-t5-nl-to-sql"
+model_path = "Job6742/my-t5-nl-to-sql"
 
 tokenizer = T5Tokenizer.from_pretrained(model_path)
 model = T5ForConditionalGeneration.from_pretrained(model_path)
