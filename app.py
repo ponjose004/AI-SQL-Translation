@@ -1,9 +1,14 @@
 from flask import Flask, render_template, request
 from transformers import T5Tokenizer, T5ForConditionalGeneration
+from huggingface_hub import login
+import os
 
 app = Flask(__name__)
 
-# Replace with your actual HF username/model-name
+# Login using secret token
+login(token=os.environ.get("HF_TOKEN"))
+
+# Your HF Hub model path (replace with your actual username)
 model_path = "Job6742/my-t5-nl-to-sql"
 
 tokenizer = T5Tokenizer.from_pretrained(model_path)
