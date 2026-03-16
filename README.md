@@ -6,7 +6,8 @@
 
 ## 🚀 Live Demo
 
-🔗 **[https://job6742-ai-sql-translator.hf.space](https://job6742-ai-sql-translator.hf.space)**
+# 🌐 [👉 CLICK HERE TO TRY THE LIVE APP](https://job6742-ai-sql-translator.hf.space)
+### 🔗 https://job6742-ai-sql-translator.hf.space
 
 > ⚠️ **Demo Notice:** This is a demo model trained on academic data. For best results, ask questions related to **students**, **classes**, **departments**, **employees**, or similar academic/institutional topics.
 >
