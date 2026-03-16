@@ -2,3 +2,4 @@ flask
 transformers
 torch
 sentencepiece
+huggingface_hub
